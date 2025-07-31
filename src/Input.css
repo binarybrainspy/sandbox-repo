@@ -1,0 +1,218 @@
+.inputcont{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ACE7C74D;
+    display: flex;
+    justify-content: center;
+}
+.formcont{
+    width: 600px;
+    height: 90vh;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 50px;
+    overflow-y: auto;
+}
+.years{
+    width: 450px;
+    /* padding-left: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.yrs1_2{
+    margin-left: 10px;
+}
+.lay1{
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    height: 5vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    color: #2D995F;
+    letter-spacing: 2px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.comp{
+    color: red;
+    font-weight: 700;
+    line-height: 70%;
+    position: relative;
+    top: 2px;
+}
+.targetcgpa_1{
+    color: grey;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+.txt1{
+    color: grey;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+.years{
+    color: grey;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.howto{
+    width: 530px;
+    color: grey;
+    font-weight: 400;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 35px;
+    font-size: 14px;
+}
+.targetcgpa_2{
+    height: 50px;
+    width: 510px;
+    padding-left: 20px;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #2D995F;
+    font-size: 24px;
+    margin-left: 35px;
+}
+.targetcgpa_2:focus{
+    border: 1px solid #2D995F;
+    outline: 1px solid #2D995F;
+}
+/* inputs */
+.semes1{
+    display: flex;
+    width: 510px;
+    height: 50px;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    align-items: center;
+    border-radius: 7px;
+    padding-left: 20px;
+    /* text */
+    color: grey;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    margin-left: 35px;
+}
+.gpa1{
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 1px solid lightgray;
+    padding-left: 20px;
+}
+.gpa1_1{
+    height: 49px;
+    width: 85px;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+    padding-right: 15px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #2D995F;
+    font-size: 24px;
+}
+.gpa1_1:focus{
+    border: none;
+    outline: none;
+}
+.units1{
+    height: 50px;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 1px solid lightgray;
+    padding-left: 20px;
+    margin-right: 3px;
+}
+.units1_1{
+    height: 49px;
+    width: 85px;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+    padding-right: 15px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #2D995F;
+    font-size: 24px;
+}
+.units1_1:focus{
+    border: none;
+    outline: none;
+}
+
+/* error indicator */
+#error{
+    outline: 2px solid rgb(218, 128, 128);
+}
+.lay2{
+    display: flex;
+    justify-content: center;
+}
+.submit{
+    width: 200px;
+    height: 50px;
+    background-color: #ffffff;
+    color: gray;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 7px;
+    border: 1px solid #2D995F;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.submit:hover{
+    width: 210px;
+    height: 50px;
+    background-color: #2D995F;
+    color: #ffffff;
+}
+.rem4, .rem5, .rem6{
+    display: none;
+}
+#errorr{
+    border: none;
+    outline: 2px solid rgb(218, 128, 128);
+}
+.yrs1_1:checked{
+    background: #2D995F;
+}
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  /* appearance: none; */
+  /* border-radius: 5px; */
+  border: 1px solid #2D995F;
+}
+input[type="checkbox"]:checked {
+  accent-color: #2D995F;
+}

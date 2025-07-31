@@ -1,0 +1,119 @@
+@media ( max-width: 640px ){
+    .inputcont{
+        width: 100vw;
+        background-color: white;
+    }
+    .formcont{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+        margin-top: 0px;
+        background-color: white;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .submit{
+        width: 210px;
+        height: 50px;
+        background-color: #2D995F;
+        color: #ffffff;
+    }
+    .targetcgpa_2{
+        width: 380px;
+        margin-left: 0px;
+    }
+    .targetcgpa_1{
+        margin-left: 0px;
+        margin-top: 70px;
+    }
+    .txt1{
+        margin-left: 0px;
+    }
+    .howto{
+        width: 400px;
+        margin-left: 0px;
+    }
+    .years{
+        width: 400px;
+        margin-left: 0px;
+    }
+    .semes1{
+        width: 380px;
+        margin-left: 0px;
+    }
+    .gpa1{
+        width: 120px;
+    }
+    .units1{
+        width: 120px;
+    }
+    .gpa1_1{
+        width: 50px;
+    }
+    .units1_1{
+        width: 50px;
+    }
+    .lay2{
+        width: 400px;
+        margin-left: 0px;
+    }
+}
+@media ( max-width: 420px ){
+    .formcont{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+        margin-top: 0px;
+        background-color: white;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .targetcgpa_2{
+        width: 310px;
+        margin-left: 0px;
+    }
+    .howto{
+        width: 330px;
+        margin-left: 0px;
+    }
+    .years{
+        width: 330px;
+        height: 50px;
+        margin-left: 0px;
+        font-size: 14px;
+        display: block;
+    }
+    .semes1{
+        width: 330px;
+        margin-top: 50px;
+        padding-left: 5px;
+        z-index: 2;
+        justify-content: 0px;
+        font-size: 14px;
+        border: 1px solid lightgray;
+    }
+    .gpa1{
+        width: 90px;
+        padding-left: 05px;
+    }
+    .units1{
+        width: 90px;
+        padding-left: 05px;
+    }
+    .gpa1_1{
+        width: 50px;
+        font-size: 20px;
+    }
+    .units1_1{
+        width: 50px;
+        font-size: 20px;
+        background-color: transparent;
+    }
+    .name{
+        left: 0px;
+    }
+}

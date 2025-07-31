@@ -9,6 +9,7 @@ function Home() {
                 <div className="header" >ACCESS MY SIWES1 REACT PROJECTS</div>
                 <Link className="btn" to="quad" >Project One</Link>
                 <Link className="btn margin" to="counter" >Project Two</Link>
+                <Link className="btn margin" to="beta" >Project Three</Link>
             </div>
         </div>
     )

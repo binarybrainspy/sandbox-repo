@@ -1,0 +1,74 @@
+@media (max-width: 580px) {
+    .betasignin{
+        display: grid;
+        grid-template-rows: 2;
+        grid-template-columns: 1;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .betacont1{
+        grid-area: 2 / 1;
+        width: 100vw;
+        border-radius: 100px 100px 0px 0px;
+        height: 50vh;
+    }
+    #betacont1_2{
+        grid-area: 1 / 1;
+        width: 100vw;
+        height: 50vh;
+    }
+    .betacont_1{
+        height: 50vh;
+        /* display: block; */
+        justify-content: start;
+        margin-top: 60px;
+    }
+    .c{
+        width: 350px;
+        /* margin-top: 0px; */
+    }
+    #cent{
+        text-align: center;
+    }
+    .name{
+        left: 0px;
+    }
+    .d{
+        position: relative;
+        top: 8px;
+        left: 60px;
+    }
+    .e{
+        position: relative;
+        top: -7px;
+        left: -30px;
+    }
+    .wel{
+        font-weight: 600;
+        font-size: 48px;
+    }
+}
+@media  ( min-width: 580px ) and ( max-width: 1020px ){
+    #betacont1_2{
+        width: 35vw;
+    }
+    .betacont1{
+        width: 70vw;
+    }
+}
+@media  ( min-width: 580px ) and ( max-width: 760px ){
+    #betacont1_2{
+        width: 25vw;
+    }
+    .betacont1{
+        width: 80vw;
+    }
+}
+@media  ( min-width: 580px ) and ( max-width: 680px ){
+    #betacont1_2{
+        width: 15vw;
+    }
+    .betacont1{
+        width: 90vw;
+    }
+}
