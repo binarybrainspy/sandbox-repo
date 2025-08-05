@@ -6,6 +6,9 @@ function Input() {
     const [targetCGPA, setTargetCGPA] = useState();
     const [gpaHistory, setGpaHistory] = useState();
     const [unitsHistory, setUnitsHistory] = useState();
+    const [response, setResponse] = useState('');
+    const [result, setResult] = useState(null);
+    const [loading, setLoading] = useState(false);
     const [isChecked, setIsChecked] = useState(true);
     const [isChecked1, setIsChecked1] = useState(false);
     const [isChecked2, setIsChecked2] = useState(false);
@@ -452,7 +455,7 @@ function Input() {
         }
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async(e) => {
         e.preventDefault(); 
         setTargetCGPA(target);
         setGpaHistory([val1,val2,val3,val4,val5,val6,val7,val8,val9,val10,val11,val12]);
@@ -479,8 +482,33 @@ function Input() {
         console.log('Unit of uncompleted semesters:',unitleft)
         const unitdone = len !== -1 ? unithistrim.slice(0, len) : [...unithistrim];
         console.log('Unit of completed semesters:',unitdone)
+        
+        // send data to backend 
 
-    }
+            const formData = {
+            targetCgpa: cgpa,
+            gpaHistory: gpahistrim,
+            cuHistory: unitdone,
+            remainingCu: unitleft,
+            };
+
+            try {
+            const res = await fetch("http://localhost:5678/webhook/b4b559aa-697e-4f4f-8011-76a57d4afc08", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData)
+            });
+
+            const data = await res.json(); // Use .json() if n8n responds with JSON
+            setResult(data);
+            // console.log("Response from n8n:", data);
+            } catch (errs) {
+            setResult("An error occurred while sending the data.");
+            console.error(errs);
+            } finally {
+            setLoading(false);
+            }
+        }
 
 
     

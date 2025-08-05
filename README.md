@@ -1,2 +1,2 @@
 # The Sandbox Project
-This is a react project as a means ofn
+This is a react project as a means of converting projects I already did in html,css and javascript to React projects and it is part of my accomplishments during my SIWES 1 Program.
