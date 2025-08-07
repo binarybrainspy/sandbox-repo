@@ -485,29 +485,29 @@ function Input() {
         
         // send data to backend 
 
-            const formData = {
-            targetCgpa: cgpa,
-            gpaHistory: gpahistrim,
-            cuHistory: unitdone,
-            remainingCu: unitleft,
-            };
+            // const formData = {
+            // targetCgpa: cgpa,
+            // gpaHistory: gpahistrim,
+            // cuHistory: unitdone,
+            // remainingCu: unitleft,
+            // };
 
-            try {
-            const res = await fetch("http://localhost:5678/webhook/b4b559aa-697e-4f4f-8011-76a57d4afc08", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData)
-            });
+            // try {
+            // const res = await fetch("https://a5lotvxkhkr8bpon0bemjft8.hooks.n8n.cloud/webhook/b4b559aa-697e-4f4f-8011-76a57d4afc08", {
+            //     method: "POST",
+            //     headers: { "Content-Type": "application/json" },
+            //     body: JSON.stringify(formData)
+            // });
 
-            const data = await res.json(); // Use .json() if n8n responds with JSON
-            setResult(data);
-            // console.log("Response from n8n:", data);
-            } catch (errs) {
-            setResult("An error occurred while sending the data.");
-            console.error(errs);
-            } finally {
-            setLoading(false);
-            }
+            // const data = await res.json(); // Use .json() if n8n responds with JSON
+            // setResult(data);
+            // // console.log("Response from n8n:", data);
+            // } catch (errs) {
+            // setResult("An error occurred while sending the data.");
+            // console.error(errs);
+            // } finally {
+            // setLoading(false);
+            // }
         }
 
 
@@ -543,7 +543,7 @@ function Input() {
                             </div>
                         </div>
                         <div className={sem4} id={err}>Semester 1
-                            <div className='gpa1' >GPA:<input className='gpa1_1' onChange={getval1handler} /></div>
+                            <div className='gpa1' >GPA:<input className='gpa1_1' onChange={(getval1handler)} /></div>
                             <div className='units1' >Units:<input className='units1_1' onChange={getval1ahandler} /></div>
                         </div>
                         <div className={sem4} id={err1}>Semester 2

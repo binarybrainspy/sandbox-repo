@@ -1,7 +1,7 @@
 import './App.css';
-import { Routes,Route } from "react-router-dom"
-import Home from './Home'
-import Quad from './Quad'
+import { Routes,Route } from "react-router-dom";
+import Home from './Home';
+import Quad from './Quad';
 import Counter from './Counter';
 import Beta from './Beta';
 import Input from './Input';
